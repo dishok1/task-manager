@@ -1,0 +1,3 @@
+const sun = (a, b) => a + b;
+
+console.log(sum(10, 5));
