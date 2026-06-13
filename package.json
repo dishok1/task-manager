@@ -1,9 +1,11 @@
 {
   "name": "lesson-8",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
@@ -13,10 +15,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "body-parser": "^2.2.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongoose": "^9.7.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -25,6 +28,7 @@
     "eslint": "^10.5.0",
     "eslint-config-prettier": "^10.1.8",
     "globals": "^17.6.0",
+    "nodemon": "^3.1.14",
     "prettier": "^3.8.4"
   }
 }

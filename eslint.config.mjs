@@ -27,6 +27,7 @@ export default defineConfig([
     rules: {
       'no-unused-vars': 'error',
       'no-console': 'off', // Ваші правила
+      'no-unused-vars': 'warn', // попередження на не використанні функції
     },
   },
 ]);
