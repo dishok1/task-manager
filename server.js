@@ -1,3 +1,15 @@
-const sun = (a, b) => a + b;
+const express = require("express");
+const bodyParser = require("body-parser");
 
-console.log(sum(10, 5));
+const app = express();
+
+const port = 3000;
+
+//midleware
+app.use(bodyParser.json());
+
+app.listen(port, () => {
+  console.log(
+    `Server listening on port $(port) and starting at http://localhost:$(app.config.port)`,
+  );
+});
