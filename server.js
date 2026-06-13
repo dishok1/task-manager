@@ -1,5 +1,5 @@
-const express = require("express");
-const bodyParser = require("body-parser");
+const express = require('express');
+const bodyParser = require('body-parser');
 
 const app = express();
 
@@ -10,6 +10,6 @@ app.use(bodyParser.json());
 
 app.listen(port, () => {
   console.log(
-    `Server listening on port $(port) and starting at http://localhost:$(app.config.port)`,
+    `Server listening on port ${port} and starting at http://localhost:${port}`
   );
 });
